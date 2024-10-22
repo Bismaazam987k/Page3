@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+
+}
+.main{
+    height: 100%;
+    width: 100%;
+    background-color: #173A3C;
+}
+.page1{
+    width: 100%;
+    height: 100vh;
+    background-color: #173A3C ;
+}
+.nav{
+    padding-top: 20px;
+    color: white;
+    height: 100px;
+    width: 100%;
+      background-color:#173A3C;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* background-color: rebeccapurple; */
+  
+}
+.nav img{
+    width: 80px;
+    height: 60px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    object-fit: cover;
+}
+.nav ul{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.nav ul li{
+    list-style-type: none;
+    font-size: 18px;
+    font-family: serif;
+}
+.nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+li a:hover{
+    cursor: pointer;
+    color: yellow;
+}
+.nav button{
+    padding: 10px 10px;
+    font-size: 18px;
+ font-family: serif;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: rgba(255, 255, 0, 0.932);
+    color: black;
+    outline: none;
+}
+.page1-content{
+    height: 100vh;
+    width: 100%;
+   display: flex;
+}
+.content{
+    background-color: #173A3C;
+    height: 100vh;
+    width: 50%;
+}
+.img{
+    background-color:#173A3C;
+    width: 50%;
+    position: relative;
+}
+.box{
+    background-color: rgba(255, 255, 0, 0.932);
+    height: 500px;
+    width: 500px;
+    position: absolute;
+    margin-top: 80px;
+    margin-left: 120px;
+    border-radius: 100%;
+}
+.img1{
+    position: absolute;
+    margin-top: 80px;
+    margin-left: 200px;
+    height: 500px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+.h1{
+    font-size: 60px;
+    font-family: serif;
+    color: white;
+    font-weight: bold;
+    margin-top: 200px;
+    margin-left: 200px;
+}
+.sp1{
+    color: yellow;
+}
+.page2{
+    background-color: blue;
+    height: 100vh;
+    width: 100%;
+}
+.slanted {
+    position: relative;
+    width: 100%;
+    height: 80px;             /* The highest point of the element */
+    background-color: yellow;
+    overflow: hidden;          /* Hide the overflow from the pseudo-element */
+}
+
+.slanted::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #173A3C;
+    transform-origin: left top;
+    transform: skewY(-10deg);  /* Creates the slant */
+}
+/* General Footer Styles */
+.footer {
+    background-color: #173A3C;
+    color: #fff;
+    padding: 60px 0 30px;
+    font-family: 'Arial', sans-serif;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Footer Sections */
+.footer-section {
+    flex: 1;
+    margin: 0 15px;
+    padding: 10px 0;
+}
+
+.footer-section h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: yellow;
+}
+
+.footer-section p {
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+/* Links Section */
+.footer-section.links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section.links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section.links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.footer-section.links ul li a:hover {
+    color: yellow;
+}
+
+/* Social Media Icons */
+.social-icons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: yellow;
+    border-radius: 50%;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+.social-icons a:hover {
+    background-color: rgba(255, 255, 0, 0.904);
+}
+
+.social-icons i {
+    font-size: 18px;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 20px;
+    font-size: 14px;
+    color: #bdc3c7;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+}
+
+
+
